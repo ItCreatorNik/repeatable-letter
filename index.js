@@ -4,9 +4,9 @@ const findRepeatableLetter = (str) => {
     const letterObj = {};
 
     for (let char of str) {
-        // Игнорирование не-буквенных символов
+        
         if (char.match(/[a-z]/i)) {
-            // Увеличение счетчика для текущей буквы
+         
             letterObj[char] = (letterObj[char] || 0) + 1;
         }
     }
